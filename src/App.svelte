@@ -3,6 +3,9 @@
     import About from "./components/About.svelte";
     import Text from "./components/Text.svelte";
     import Person from "./components/Person.svelte";
+    import Skills from "./components/Skills.svelte";
+    import Photos from "./components/Photos.svelte";
+    import ButtonCount from "./components/ButtonCount.svelte";
 
     //export permite exportar la variable hacia otros componentes
 	export let name;
@@ -22,7 +25,10 @@
     <Text anotherText="Hola desde otro Componente" />
     <Text />
     <Person data={data} />
+    <Skills />
     <img src="{sveltelogo}" alt="">
+    <ButtonCount />
+    <Photos />
 </main>
 
 <style>
@@ -35,6 +41,11 @@
     :global(:root){
         /* Al colocar --VAR se puede declarar una variable CSS que podrá ser usada luego */
         --theme-color:purple;
+    }
+
+    :global(body.dark-mode){
+        background-color: #1d3040;
+        color: #bfc2c7;
     }
 
     p{
