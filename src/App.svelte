@@ -48,6 +48,7 @@
         color: #bfc2c7;
     }
 
+
     p{
         /* Si queremos usar el valor de una variable declarada hacemos uso de var(--VAR) */
         color: var(--theme-color);
